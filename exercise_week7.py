@@ -70,3 +70,18 @@ with open("router_config.json", "r") as f:
 print(f"Loaded hostname: {loaded_config['hostname']}")
 print(f"Number of interfaces: {len(loaded_config['interfaces'])}")
 print()
+
+
+#-------------------
+#EXERCISE 4: Save YAML to as a file
+#-------------------
+
+print("=== EXERCISE 4: Save YAML to as a file ===")
+
+#FILL IN THE BLANK: open "router_config" for writing
+with open("router_config.yaml", "w") as f:
+    yaml.dump(router_config, f, default_flow_style=False)
+
+print("Saved to router_config.yaml!")
+print()
+

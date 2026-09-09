@@ -34,32 +34,7 @@ router_config = {
 print("=== EXERCISE 1: Convert to JSON ===")
 
 #FILL IN THE BLANK: use to convert router_config to JSON
-json_output = json.dump(router_config, indent=2)
+json_output = json.dumps(router_config, indent=2)
 
 print(json_output)
 print()
-
-#-------------------
-#EXERCISE 2: Convert Python dict -> YAML
-#-------------------
-#HINT: converts a Python dict to a YAML string
-
-print("=== EXERCISE 2: Convert to YAML ===")
-
-#FILL IN THE BLANK: use to convert router_config to YAML
-yaml_output = yaml.dump(router_config, default_flow_style=False)
-
-print(yaml_output)
-print()
-
-
-#-------------------
-#EXERCISE 3: Read JSON from a file
-#-------------------
-
-print("=== EXERCISE 3: Read JSON from file ===")
-
-#First, let's save our config as a JSON file
-with open("router_config.json", "w") as f:
-    json.dump(router_config, f, indent=2)
-
